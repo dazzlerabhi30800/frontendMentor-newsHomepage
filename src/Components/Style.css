@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+
+  /* ### Neutral */
+
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+
+  /* fonts */
+  --font-Inter: "Inter", sans-serif;
+}
+
+* {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  transition: all 0.3s linear;
+}
+body.fade {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+body.fade main {
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(100%);
+  z-index: 1;
+}
+
+.nav--list > li {
+  font-family: var(--font-Inter);
+  font-weight: 400;
+}
+.nav--list > li > a:hover {
+  transition: all 0.3s linear;
+  color: orange;
+}
+
+.text--wrapper {
+  font-family: var(--font-Inter);
+}
+
+.btn {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+}
+
+.news--wrapper {
+  font-family: var(--font-Inter);
+}
+.news--wrapper > .news--container > .headline {
+  transition: all 0.3s linear;
+}
+.news--wrapper > .news--container > .headline:hover {
+  color: var(--Soft-orange);
+}
+.news--wrapper > .news--container > p {
+  font-size: 0.95rem;
+  width: 85%;
+}
+
+@media (hover: hover) {
+  .nav--list > li > a {
+    cursor: pointer;
+  }
+  #close--btn {
+    cursor: pointer;
+  }
+  #open--btn {
+    cursor: pointer;
+  }
+  .btn {
+    cursor: pointer;
+  }
+  .news--wrapper > .news--container > .headline {
+    cursor: pointer;
+  }
+}
+
+@media Screen and (min-width: 768px) {
+  #open--btn {
+    display: none;
+  }
+  #close--btn {
+    display: none;
+  }
+}
