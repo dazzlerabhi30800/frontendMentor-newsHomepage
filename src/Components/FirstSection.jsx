@@ -35,12 +35,12 @@ function FirstSection() {
           />
         )}
       </div>
-      <div className="text--wrapper flex flex-col gap-2 p-1 lg:flex-row lg:p-0">
-        <h1 className="heading font-extrabold text-3xl w-3/4 lg:text-5xl lg:w-full lg:mt-2">
+      <div className="text--wrapper flex flex-col gap-2 p-1 lg:flex-row lg:gap-10 lg:p-0">
+        <h1 className="heading font-extrabold text-3xl w-3/4 lg:text-5xl lg:w-3/5 lg:mt-4">
           The Bright Future of Web 3.0?
         </h1>
-        <div className="info--container flex flex-col gap-6 pr-8 lg:justify-between lg:pt-2">
-          <p className="text-gray-500 font-regular text-sm">
+        <div className="info--container flex flex-col gap-6 pr-8 lg:justify-between lg:pt-4 lg:w-full">
+          <p className="text-gray-500 font-regular text-sm lg:w-4/5">
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of people. But is it
             really fulfilling its promise?
