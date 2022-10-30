@@ -30,22 +30,22 @@ function Header() {
       <ul
         className={`nav--list flex flex-col px-10 py-20 gap-6 absolute top-0 w-3/5 h-full bg-white right-0 ${
           click ? "translate-x-0 z-50" : "translate-x-[30rem]"
-        } ease-in duration-300 md:static md:w-auto md:h-auto md:bg-transparent md:top-auto md:translate-x-0 md:px-0 md:py-1 md:flex-row md:items-center`}
+        } ease-in duration-300 md:static md:w-fit md:gap-10 md:h-fit md:top-auto md:translate-x-0 md:px-2 md:py-2 md:flex-row md:items-start`}
       >
         <li>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="#">New</a>
+          <a href="/">New</a>
         </li>
         <li>
-          <a href="#">Popular</a>
+          <a href="/">Popular</a>
         </li>
         <li>
-          <a href="#">Trending</a>
+          <a href="/">Trending</a>
         </li>
         <li>
-          <a href="#">Categories</a>
+          <a href="/">Categories</a>
         </li>
       </ul>
       {click ? (

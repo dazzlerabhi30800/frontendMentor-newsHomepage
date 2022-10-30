@@ -17,7 +17,6 @@
 
 * {
   width: 100%;
-  overflow-x: hidden;
 }
 
 html {
@@ -74,6 +73,10 @@ body.fade main {
   width: 85%;
 }
 
+.news--container {
+  border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+
 @media (hover: hover) {
   .nav--list > li > a {
     cursor: pointer;
@@ -90,6 +93,9 @@ body.fade main {
   .news--wrapper > .news--container > .headline {
     cursor: pointer;
   }
+  .hot--news--wrapper > .hot--news--card > .info--wrapper h4 {
+    cursor: pointer;
+  }
 }
 
 @media Screen and (min-width: 768px) {
@@ -98,5 +104,31 @@ body.fade main {
   }
   #close--btn {
     display: none;
+  }
+}
+
+@media Screen and (min-width: 1024px) {
+  .img--wrapper {
+    grid-column-start: span 2;
+  }
+  .text--wrapper {
+    grid-column-start: span 2;
+    grid-row-start: 2;
+  }
+  .news--wrapper {
+    grid-column-start: 3 / span 4;
+    grid-row-start: span 2;
+  }
+  header {
+    min-width: 1000px;
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  main {
+    min-width: 1000px;
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto;
   }
 }
