@@ -34,6 +34,10 @@ body {
 body.fade {
   background-color: rgba(0, 0, 0, 0.6);
 }
+body.hide {
+  overflow: hidden;
+  max-height: 100vh;
+}
 
 body.fade main {
   transition: all 0.3s ease-in-out;

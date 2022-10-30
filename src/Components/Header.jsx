@@ -8,9 +8,11 @@ function Header() {
     if (click) {
       setClick(false);
       document.body.classList.remove("fade");
+      document.body.classList.remove("hide");
     } else {
       setClick(true);
       document.body.classList.add("fade");
+      document.body.classList.add("hide");
     }
   };
 

@@ -1,2 +1,14 @@
 .App {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media Screen and (min-width: 1024px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
